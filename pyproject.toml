@@ -1,0 +1,25 @@
+[project]
+name = "railway-delay-api"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "eth-account>=0.14.0",
+    "fastapi[standard]>=0.141.1",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.3",
+    "web3>=8.0.0",
+    "x402[evm,fastapi]>=2.24.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]

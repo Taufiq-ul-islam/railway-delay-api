@@ -1,0 +1,1 @@
+Train 12290 is delayed at BPL. Expected arrival 09:15 due to signal failure.
